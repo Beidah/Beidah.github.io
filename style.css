@@ -1,0 +1,82 @@
+/* 
+  Color Scheme
+  #f1f6f9
+  #14274e
+  #394867
+  #9ba4b4
+*/
+
+html {
+  /* Normalize */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Normalize */
+  padding: 0;
+  margin: 0;
+  /* For the main body */
+  background-color: #f1f6f9;
+  text-align: center;
+  color: #394867;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background-color: #14274e;
+  color: #9ba4b4;
+  text-align: center;
+  margin-top: 0;
+  padding: 0.25em 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header h2 {
+  margin-top: 0.5em;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+img {
+  height: 300px;
+}
+
+section {
+  padding: 1em 35%;
+}
+
+#contact ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+hr {
+  width: 20%;
+}
+
+#technology {
+  text-align: left;
+  padding: 3px;
+  border: 1px solid #14274e;
+}
+
+/* Link Stylings */
+ 
+a {
+  color: #394867;
+}
+
+a:visited {
+  color: #9ba4b4;
+}
+
+a:hover, a:active {
+  color: #14274e;
+}
