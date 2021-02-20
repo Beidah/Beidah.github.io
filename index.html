@@ -11,45 +11,46 @@
 <body>
   <header>
     <h1>Hunter Marshall</h1>
-    <h2>Software Developer</h2>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <!-- Introduction -->
     <section id="intro">
       <h2>Welcome!</h2>
-        <img src="Hunter.jpg" alt="Hunter Marshall">
-      <p>I'm Hunter Marshall, a software developer currently living in East Texas.</p>
-    </section>
-    <hr>
-    <!-- About Me -->
-    <section id="about-me">
-      <h3>About Me</h3>
-      <p>I originally began programing as a hobby, in order to learn how video games work. I eventually found my way to <em>The Odin Project</em> and began learning web development. I'm looking forward to joining a team of friendly people.</p>
-      <p>I am currently enrolled in Thinkful.</p>
-      <div id="technology">
-        <p>I'm familiar with the following technologies:</p>
-        <ul>
-          <li>
-            Web Development:
-            <ul>
-              <li>Frontend with HTML and CSS</li>
-              <li>Fullstack Ruby with Rails and Active Record</li>
-              <li>Backend Rust with Actix and Diesel</li>
-            </ul>
-          </li>
-          <li>
-            Game Development:
-            <ul>
-              <li>C# Unity</li>
-              <li>Rust and Bevy</li>
-              <li>Engine development with C++ and OpenGL</li>
-            </ul>
-          </li>
-        </ul>
+      <div class="group">
+        <img src="Hunter.jpg" alt="Hunter Marshall" class="item-double" >
+        <p>I'm Hunter Marshall, an aspiring web developer currently living in East Texas. I'm a hobbyist game developer who has learned programming primarily through self-teaching.</p>
       </div>
     </section>
     <hr>
+    <!-- About Me -->
+    <section id="about">
+      <h3>About Me</h3>
+      <p>I originally began programing as a hobby, in order to learn how video games work. I eventually found my way to <em>The Odin Project</em> and began learning web development. I'm looking forward to joining a team of friendly people.</p>
+      <p>I am currently enrolled in Thinkful, learning fullstack Javascript with React. I also know python, C# with unity, C++, and the Rust programming language.</p>
+    </section>
+
+    <hr>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h3>Projects</h3>
+      <ul id="projects-list">
+        <li><a href="https://github.com/Beidah/Raytracer">Ray Tracer</a> A Ray Tracer made in Rust.</li>
+        <li><a href="https://github.com/Beidah/odin-blogger">Blogger</a> A basic blogging site made using Ruby and Rails.</li>
+        <li><a href="https://github.com/Beidah/clojure-twitter-bot">Twitter Bot</a> A markov chain generator using Clojure that posts to twitter.</li>
+      </ul>
+    </section>
+
+    <hr>
+
     <!-- Contact Information -->
     <section id="contact">
       <h3>Contact Me</h3>
@@ -59,6 +60,27 @@
         <li><a href="https://github.com/beidah" target="_blank">Github</a></li>
         <li><a href="mailto:beidah@gmail.com">Email</a></li>
       </ol>
+
+      <!-- Contact Form -->
+      <form
+        action="https://formspree.io/f/xvovnlwj"
+        method="POST"
+      >
+        <label>
+          <p>Your name:</p>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <p>Your email:</p>
+          <input type="email" name="_replyto" required>
+        </label>
+        <label>
+          <p>Your message:</p>
+          <textarea name="message"></textarea>
+        </label>
+        <br>
+        <button type="submit">Send</button>
+      </form>
     </section>
   </main>
 </body>

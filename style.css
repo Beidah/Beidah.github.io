@@ -4,7 +4,18 @@
   #14274e
   #394867
   #9ba4b4
+
+
+
+  Dark Blue: #12232E
+  Lighter Blue: #007CC7
+  Lightest Blue: #4DA8DA
+  Shadow of Dark Blue: #203647
+  Shadow of Light Blue: #EEFBFB
+
 */
+
+/* General */
 
 html {
   /* Normalize */
@@ -23,6 +34,12 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Headers */
+
 header {
   background-color: #14274e;
   color: #9ba4b4;
@@ -31,25 +48,40 @@ header {
   padding: 0.25em 0;
 }
 
-h1 {
+header h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-top: 20px;
 }
 
-header h2 {
-  margin-top: 0.5em;
+header nav ul {
+  list-style: none;
+  /* Flex */
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+header nav ul li a {
+  color: #9ba4b4;
+  margin: 0 4px 0 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
+header nav ul li a:last-child {
+  padding-right: 0;
+}
+
+/* Main Body */
 
 img {
   height: 300px;
 }
 
-section {
-  padding: 1em 35%;
+main {
+  padding: 0 6px;
 }
 
 #contact ol {
@@ -67,6 +99,27 @@ hr {
   border: 1px solid #14274e;
 }
 
+/* Projects */
+
+#projects-list {
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+
+#projects-list li {
+  background-color: #9ba4b4;
+  border: 1px solid #14274e;
+  padding: 6px;
+}
+
+#projects-list li a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
 /* Link Stylings */
  
 a {
@@ -79,4 +132,40 @@ a:visited {
 
 a:hover, a:active {
   color: #14274e;
+}
+
+/* Desktop */
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    display: inline;
+    padding-top: 0;
+  }
+
+  #projects-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #projects-list li {
+    margin: 6px;
+    flex: 1;
+  }
+
+  section {
+    padding: 1em 15%;
+  }
+
+  .group {
+    display: flex;
+  }
+
+  .item-double {
+    flex: 2;
+  }
 }
