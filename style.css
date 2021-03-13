@@ -77,7 +77,8 @@ header nav ul li a:last-child {
 /* Main Body */
 
 img {
-  height: 300px;
+  height: 400px;
+  width: auto;
 }
 
 main {
@@ -102,15 +103,21 @@ hr {
 /* Projects */
 
 #projects-list {
+  display: flex;
+  justify-content: space-between;
   text-align: left;
   list-style: none;
   padding-left: 0;
 }
 
-#projects-list li {
-  background-color: #9ba4b4;
+.project-item {
+  /* background-color: #9ba4b4; */
+  max-width: 30%;
+  min-width: 20%;
+  text-align: center;
   border: 1px solid #14274e;
   padding: 6px;
+  margin: 10px;
 }
 
 #projects-list li a {
@@ -118,6 +125,19 @@ hr {
   text-align: center;
   font-size: 16px;
   margin-bottom: 4px;
+}
+
+form {
+  margin: 6px 15px;
+  text-align: left;
+}
+
+form label {
+  display: block;
+}
+
+form label input, form label textarea {
+  display: block;
 }
 
 /* Link Stylings */
@@ -167,5 +187,9 @@ a:hover, a:active {
 
   .item-double {
     flex: 2;
+  }
+
+  .item {
+    flex: 1;
   }
 }

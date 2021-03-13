@@ -25,16 +25,20 @@
     <section id="intro">
       <h2>Welcome!</h2>
       <div class="group">
-        <img src="Hunter.jpg" alt="Hunter Marshall" class="item-double" >
-        <p>I'm Hunter Marshall, an aspiring web developer currently living in East Texas. I'm a hobbyist game developer who has learned programming primarily through self-teaching.</p>
+        <div class="item">
+          <img src="Hunter.jpg" alt="Hunter Marshall">
+        </div>
+        <div class="item">
+          <p>I'm Hunter Marshall, an aspiring web developer currently living in East Texas. I'm a hobbyist game developer who has learned programming primarily through self-teaching.</p>
+        </div>
       </div>
     </section>
     <hr>
     <!-- About Me -->
     <section id="about">
       <h3>About Me</h3>
-      <p>I originally began programing as a hobby, in order to learn how video games work. I eventually found my way to <em>The Odin Project</em> and began learning web development. I'm looking forward to joining a team of friendly people.</p>
-      <p>I am currently enrolled in Thinkful, learning fullstack Javascript with React. I also know python, C# with unity, C++, and the Rust programming language.</p>
+      <p>I originally began programming as a hobby to learn how video games work. I eventually found my way to <em>The Odin Project</em> and began learning web development. I'm looking forward to joining a team of friendly people.</p>
+      <p>I am currently enrolled in Thinkful, learning full-stack Javascript with React. I also know python, C# with unity, C++, and the Rust programming language.</p>
     </section>
 
     <hr>
@@ -42,11 +46,31 @@
     <!-- Projects -->
     <section id="projects">
       <h3>Projects</h3>
-      <ul id="projects-list">
+      <!-- <ul id="projects-list">
         <li><a href="https://github.com/Beidah/Raytracer">Ray Tracer</a> A Ray Tracer made in Rust.</li>
         <li><a href="https://github.com/Beidah/odin-blogger">Blogger</a> A basic blogging site made using Ruby and Rails.</li>
         <li><a href="https://github.com/Beidah/clojure-twitter-bot">Twitter Bot</a> A markov chain generator using Clojure that posts to twitter.</li>
-      </ul>
+      </ul> -->
+
+      <div id="projects-list">
+        <div class="project-item item">
+          <h4 class="project-name">Project Name</h4>
+          <p class="project-links"><a href="#">Live Link</a> | <a href="#">Repo Link</a></p>
+          <p class="project-description">This is a description of the app I have built. It contains details about what my goals were, what I accomplished with them, and what sort of skills and technologies I used.</p>
+        </div>
+
+        <div class="project-item item">
+          <h4 class="project-name">Project Name</h4>
+          <p class="project-links"><a href="#">Live Link</a> | <a href="#">Repo Link</a></p>
+          <p class="project-description">This is a description of the app I have built. It contains details about what my goals were, what I accomplished with them, and what sort of skills and technologies I used.</p>
+        </div>
+
+        <div class="project-item item">
+          <h4 class="project-name">Project Name</h4>
+          <p class="project-links"><a href="#">Live Link</a> | <a href="#">Repo Link</a></p>
+          <p class="project-description">This is a description of the app I have built. It contains details about what my goals were, what I accomplished with them, and what sort of skills and technologies I used.</p>
+        </div>
+      </div>
     </section>
 
     <hr>
@@ -67,15 +91,15 @@
         method="POST"
       >
         <label>
-          <p>Your name:</p>
+          Your name:
           <input type="text" name="name" required>
         </label>
         <label>
-          <p>Your email:</p>
+          Your email:
           <input type="email" name="_replyto" required>
         </label>
         <label>
-          <p>Your message:</p>
+          Your message:
           <textarea name="message"></textarea>
         </label>
         <br>
